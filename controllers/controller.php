@@ -2,11 +2,15 @@
 
 declare(strict_types=1);
 
+namespace Cinema;
+
 use \Cinema\Movie as Movie;
 use \Cinema\Actor as Actor;
-use \Cinema\Filmmaker as Filmmaker;
+use \Cinema\Filmmaker as Real;
+// require_once './models/filmmaker.php';
 
-$nolan = new Filmmaker('Christopher', 'Nolan');
+// $nolan = new \Cinema\Filmmaker('Christopher', 'Nolan');
+$nolan = new Real('Christopher', 'Nolan');
 
 ob_start();
 include_once './templates/view_filmmaker.php';

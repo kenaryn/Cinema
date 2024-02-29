@@ -9,7 +9,7 @@ class Filmmaker
   private string $_fname;
   private string $_lname;
 
-  public function __construct(string $fname, string $lname): void
+  public function __construct(string $fname, string $lname)
   {
     $this->_fname = $fname;
     $this->_lname = $lname;
